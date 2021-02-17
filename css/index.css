@@ -1,0 +1,124 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --Bright-yellow: hsl(71, 73%, 54%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --Light-Gray: hsl(204, 43%, 93%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: white;
+  height: 100vh;
+  font-size: 16px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+}
+.carta {
+  background: white;
+  border-radius: 10px;
+  font-family: "Karla", sans-serif;
+  box-shadow: 5px 5px 15px black;
+}
+.carta-head {
+  margin-top: 20px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.carta-head .title {
+  font-weight: 700;
+  color: var(--cyan);
+}
+.carta-head .subtitle {
+  margin-top: 15px;
+  font-weight: 700;
+  color: var(--Bright-yellow);
+}
+.carta-head .text {
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.columna {
+  display: flex;
+  flex-direction: row;
+}
+.carta-left {
+  background: var(--cyan);
+  width: 50%;
+  color: var(--Light-Gray);
+  border-bottom-left-radius: 10px;
+}
+.carta-left .suscripcion {
+  margin-top: 15px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.carta-left .paga {
+  font-weight: 700;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.carta-left .paga span {
+  color: rgb(211, 211, 211);
+  font-size: 12px;
+  margin-left: 10px;
+}
+.carta-left .access {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.carta-left button {
+  background-color: var(--Bright-yellow);
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 15px;
+  color: ligh var(--Light-Gray);
+  margin-bottom: 15px;
+  border-radius: 5px;
+  height: 40px;
+  border: none;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+.carta-right {
+  background: hsl(179, 67%, 60%);
+  width: 50%;
+  color: var(--Light-Gray);
+  border-bottom-right-radius: 10px;
+}
+.carta-right .title {
+  margin-top: 15px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.carta-right .text {
+  margin-left: 20px;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 375px) {
+  .columna {
+    display: flex;
+    flex-direction: column;
+  }
+  .carta-left {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .carta-right {
+    width: 100%;
+  }
+}
