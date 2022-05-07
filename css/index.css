@@ -10,16 +10,13 @@
   box-sizing: border-box;
 }
 body {
-  height: 100vh;
-  font-size: 16px;
-}
-.flex {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background: var(--Light-Gray)
 }
+
 .carta {
   background: white;
   border-radius: 5px;
@@ -57,7 +54,7 @@ body {
   height: 260px;
 }
 
-/*Changing Content*/
+
 .carta-left {
   background: var(--cyan);
   width: 50%;
@@ -90,7 +87,7 @@ body {
   background-color: var(--Bright-yellow);
   width: 74%;
   margin-left: 13%;
-  margin-top: 20px;
+  margin-top: 25px;
   color: var(--Light-Gray);
   border-radius: 5px;
   border: none;
@@ -104,7 +101,7 @@ body {
   background: #4abebd;
   width: 50%;
   color: var(--Light-Gray);
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 5px;
 }
 .carta-right .title {
   margin-top: 40px;
@@ -119,10 +116,85 @@ body {
   font-size: 15px;
   margin-bottom: 10px;
 }
+
+/*Changing Content*/
+
 @media screen and (max-width: 375px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    
+  }
+
   .columna {
     display: flex;
     flex-direction: column;
+  }
+  
+  .carta {
+  height: 620px;
+   width: 85%;
+   margin-top: 60px;
+   margin-bottom: 60px
+
+  }
+
+  .carta-header .title {
+    font-size: 20px;
+    padding-top: 30px;
+    margin-left: 10px;
+  }
+  .carta-header .subtitle {
+    padding-top: 20px;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .carta-header .text {
+    padding-top: 20px;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  .columna {
+    display: flex;
+    flex-direction: column;
+  }
+  .carta-left .suscripcion {
+    margin-top: 30px;
+    font-weight: 700;
+    margin-left: 30px;
+    font-size: 18px;
+  }
+  .carta-left .paga {
+    font-weight: 700;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .carta-left .paga span {
+    color: var(--Light-Gray);
+    font-size: 16px;
+    margin-left: 5px;
+    font-weight: 200;
+  }
+  .carta-left .access {
+    margin-left: 30px;
+  }
+  .carta-left button {
+    margin-bottom: 30px;
+  }
+ .carta-right .title {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .carta-right .text {
+    margin-left: 35px;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 10px;
   }
   .carta-left {
     width: 100%;
@@ -130,5 +202,10 @@ body {
   }
   .carta-right {
     width: 100%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .carta-right .text {
+    margin-bottom: 20px;
   }
 }
