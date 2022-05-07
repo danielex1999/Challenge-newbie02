@@ -10,7 +10,6 @@
   box-sizing: border-box;
 }
 body {
-  background: white;
   height: 100vh;
   font-size: 16px;
 }
@@ -19,44 +18,51 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: rgb(255, 255, 255);
+  background: var(--Light-Gray)
 }
 .carta {
   background: white;
-  border-radius: 10px;
+  border-radius: 5px;
   font-family: "Karla", sans-serif;
-  box-shadow: 5px 5px 15px black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 635px;
+  height: 475px;
 }
-.carta-head {
-  margin-top: 20px;
-
-  margin-left: 20px;
-  margin-right: 20px;
+.carta-header {
+  height: 50%;
+  width: 90%;
+  margin-left: 5%;
 }
-.carta-head .title {
+.carta-header .title {
   font-weight: 700;
   color: var(--cyan);
+  font-size: 24px;
+  padding-top: 40px;
 }
-.carta-head .subtitle {
-  margin-top: 15px;
+.carta-header .subtitle {
+  padding-top: 20px;
   font-weight: 700;
   color: var(--Bright-yellow);
+  font-size: 20px;
 }
-.carta-head .text {
+.carta-header .text {
   color: var(--Grayish-Blue);
   font-weight: 400;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  font-size: 16px;
 }
 .columna {
   display: flex;
   flex-direction: row;
+  height: 50%;
 }
+
+/*Changing Content*/
 .carta-left {
   background: var(--cyan);
   width: 50%;
   color: var(--Light-Gray);
-  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 5px;
 }
 .carta-left .suscripcion {
   margin-top: 15px;
